@@ -15,8 +15,8 @@ jobs:
           command: |
             alias helm=/tmp/helm/bin/linux-amd64/helm
             if [ "$CIRCLE_BRANCH" = "master" ]; then
-              helm repo add int128 https://ly012.github.io/hc
+              helm repo add ly012 https://ly012.github.io/hc
               helm repo update
               helm repo list
-              helm inspect int128/example
+              helm inspect ly012/example
             fi
